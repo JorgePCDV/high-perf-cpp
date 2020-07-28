@@ -1,9 +1,6 @@
-// high-perf-cpp.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+#include "stadfx.h"
 
-#include "stdafx.h"
-
-string get_cpu_name() 
+string get_cpu_name()
 {
     uint32_t data[4] = { 0 };
 
@@ -20,7 +17,7 @@ string get_cpu_name()
 
 int main()
 {
-    cout << "high perf\n";
+    cout << "Hello World!\n";
     cout << "CPU Name: " << get_cpu_name();
 }
 

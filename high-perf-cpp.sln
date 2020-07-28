@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30002.166
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "high-perf-cpp", "high-perf-cpp\high-perf-cpp.vcxproj", "{823D1CB6-8606-46E0-B359-BBE91B738579}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SIMD", "SIMD\SIMD.vcxproj", "{F83B7DC0-F1A1-4375-96E2-6D9703FD27C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{823D1CB6-8606-46E0-B359-BBE91B738579}.Release|x64.Build.0 = Release|x64
 		{823D1CB6-8606-46E0-B359-BBE91B738579}.Release|x86.ActiveCfg = Release|Win32
 		{823D1CB6-8606-46E0-B359-BBE91B738579}.Release|x86.Build.0 = Release|Win32
+		{F83B7DC0-F1A1-4375-96E2-6D9703FD27C6}.Debug|x64.ActiveCfg = Debug|x64
+		{F83B7DC0-F1A1-4375-96E2-6D9703FD27C6}.Debug|x64.Build.0 = Debug|x64
+		{F83B7DC0-F1A1-4375-96E2-6D9703FD27C6}.Debug|x86.ActiveCfg = Debug|Win32
+		{F83B7DC0-F1A1-4375-96E2-6D9703FD27C6}.Debug|x86.Build.0 = Debug|Win32
+		{F83B7DC0-F1A1-4375-96E2-6D9703FD27C6}.Release|x64.ActiveCfg = Release|x64
+		{F83B7DC0-F1A1-4375-96E2-6D9703FD27C6}.Release|x64.Build.0 = Release|x64
+		{F83B7DC0-F1A1-4375-96E2-6D9703FD27C6}.Release|x86.ActiveCfg = Release|Win32
+		{F83B7DC0-F1A1-4375-96E2-6D9703FD27C6}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
