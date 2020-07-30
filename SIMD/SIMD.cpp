@@ -15,10 +15,32 @@ string get_cpu_name()
     return string((const char*)data);
 }
 
+void assembler()
+{
+    cout << "CPU Name: " << get_cpu_name() << endl;
+
+    float f1[] = { 1.f, 2.f, 3.f, 4.f };
+    float f2[] = { 5.f, 4.f, 3.f, 2.f };
+    float result[4] = { 0.f };
+
+    _asm
+    {
+        movups xmm1, f1;
+        movups xmm2, f2;
+        mulps xmm1, xmm2;
+        movups result, xmm1;
+    }
+
+    for (size_t i = 0; i < 4; i++)
+    {
+        cout << result[i] << "\t";
+    }
+    cout << endl;
+}
+
 int main()
 {
-    cout << "Hello World!\n";
-    cout << "CPU Name: " << get_cpu_name();
+    assembler();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
