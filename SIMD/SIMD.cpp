@@ -36,6 +36,28 @@ void assembler()
         cout << result[i] << "\t";
     }
     cout << endl;
+
+    int d, c;
+
+    _asm 
+    {
+        mov eax, 1;
+        cpuid;
+        mov d, edx;
+        mov c, edx;
+    }
+
+    if ((d & (1 << 26)) != 0)
+        cout << "SSE2 is supported " << endl;
+
+    if ((c & 1) != 0)
+        cout << "SSE3 is supported " << endl;
+
+    if ((c & (1 << 19)) != 0)
+        cout << "SSE4.1 is supported " << endl;
+
+    if ((c & (1 << 20)) != 0)
+        cout << "SSE4.2 is supported " << endl;
 }
 
 int main()
