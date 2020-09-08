@@ -60,9 +60,16 @@ void assembler()
         cout << "SSE4.2 is supported " << endl;
 }
 
+void intrinsics()
+{
+    int cpuInfo[4];
+    __cpuid(cpuInfo, 1);
+}
+
 int main()
 {
-    assembler();
+    intrinsics();
+    //assembler();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
