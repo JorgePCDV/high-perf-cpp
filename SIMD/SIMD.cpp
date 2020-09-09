@@ -64,6 +64,12 @@ void intrinsics()
 {
     int cpuInfo[4];
     __cpuid(cpuInfo, 1);
+
+    auto a = _mm_set_ps(1, 2, 3, 4);
+    auto b = _mm_set_ps(4, 3, 2, 1);
+    auto c = _mm_add_ps(a, b);
+
+    float f = c.m128_f32[0];
 }
 
 int main()
