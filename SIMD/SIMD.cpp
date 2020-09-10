@@ -70,6 +70,15 @@ void intrinsics()
     auto c = _mm_add_ps(a, b);
 
     float f = c.m128_f32[0];
+
+    __try 
+    {
+        __m256d z = _mm256_set_pd(1, 2, 3, 4);
+    }
+    __except (1)
+    {
+        cout << "Operation not supported " << endl;
+    }
 }
 
 int main()
