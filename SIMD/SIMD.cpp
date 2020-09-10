@@ -83,7 +83,7 @@ void intrinsics()
 
 int main()
 {
-    //intrinsics();
+    intrinsics();
     //assembler();
 }
 
