@@ -1,4 +1,5 @@
 #include "stadfx.h"
+#include "SIMD.h"
 
 string get_cpu_name()
 {
@@ -81,10 +82,46 @@ void intrinsics()
     }
 }
 
+void simple_mad(float* a, 
+                float* b, 
+                float* c, 
+                float* result, 
+                const int length)
+{
+
+}
+
+void optimization()
+{
+    const int length = 1024 * 1024 * 64;
+    float* a = new float[length];
+    float* b = new float[length];
+    float* c = new float[length];
+    float* result = new float[length];
+
+    mt19937_64 rng(random_device{}());
+    uniform_real_distribution<float> dist(0, 1);
+
+    for (size_t i = 0; i < length; i++)
+    {
+        a[i] = dist(rng);
+        b[i] = dist(rng);
+        c[i] = dist(rng);
+    }
+
+    simple_mad(a, b, c, result, length);
+
+    delete[] a;
+    delete[] b;
+    delete[] c;
+    delete[] result;
+}
+
 int main()
 {
-    intrinsics();
     //assembler();
+    //intrinsics();
+    optimization();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

@@ -26,5 +26,8 @@
     <ClInclude Include="stadfx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="SIMD.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -154,6 +154,7 @@
     <ClCompile Include="stadfx.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="SIMD.h" />
     <ClInclude Include="stadfx.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
