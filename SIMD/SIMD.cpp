@@ -1,5 +1,6 @@
 #include "stadfx.h"
 #include "SIMD.h"
+using namespace std::chrono;
 
 string get_cpu_name()
 {
@@ -88,7 +89,10 @@ void simple_mad(float* a,
                 float* result, 
                 const int length)
 {
-
+    for (size_t i = 0; i < length; i++)
+    {
+        result[i] = a[i] * b[i] + c[i];
+    }
 }
 
 void optimization()
@@ -109,7 +113,15 @@ void optimization()
         c[i] = dist(rng);
     }
 
+    auto begin = high_resolution_clock::now();
     simple_mad(a, b, c, result, length);
+    auto end = high_resolution_clock::now();
+    
+    cout << "MAD took up " 
+         << duration_cast<milliseconds>(end - begin).count() 
+         << " msec"
+         << endl;
+
 
     delete[] a;
     delete[] b;
