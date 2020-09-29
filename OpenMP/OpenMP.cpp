@@ -20,9 +20,24 @@ void hello_openmp()
 	}
 }
 
+void pfor()
+{
+	const int length = 1024 * 1024 * 64;
+	float *a = new float[length],
+		  *b = new float[length],
+		  *c = new float[length],
+		  *result = new float[length];
+
+	for (size_t i = 0; i < length; i++)
+	{
+		result[i] = a[i] + b[i] * erff(c[i]);
+	}
+}
+
 int main() 
 {
 	hello_openmp();
+	pfor();
 	getchar();
 	return 0;
 }
