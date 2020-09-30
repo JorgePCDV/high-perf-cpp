@@ -28,10 +28,16 @@ void pfor()
 		  *c = new float[length],
 		  *result = new float[length];
 
+#pragma omp parallel for
 	for (size_t i = 0; i < length; i++)
 	{
 		result[i] = a[i] + b[i] * erff(c[i]);
 	}
+
+	delete[] a;
+	delete[] b;
+	delete[] c;
+	delete[] result;
 }
 
 int main() 
