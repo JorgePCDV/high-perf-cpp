@@ -29,7 +29,7 @@ void pfor()
 		  *result = new float[length];
 
 #pragma omp parallel for
-	for (size_t i = 0; i < length; i++)
+	for (int i = 0; i < length; i++)
 	{
 		result[i] = a[i] + b[i] * erff(c[i]);
 	}
@@ -40,10 +40,32 @@ void pfor()
 	delete[] result;
 }
 
+void sections()
+{
+#pragma omp parallel sections
+	{
+#pragma omp section
+		{
+			for (int i = 0; i < 1000; i++)
+			{
+				cout << i;
+			}
+		}
+#pragma omp section
+		{
+			for (int i = 0; i < 1000; i++)
+			{
+				cout << static_cast<char>('a' + (i % 26));
+			}
+		}
+	}
+}
+
 int main() 
 {
-	hello_openmp();
-	pfor();
-	getchar();
+	//hello_openmp();
+	//pfor();
+	sections();
+	//getchar();
 	return 0;
 }
