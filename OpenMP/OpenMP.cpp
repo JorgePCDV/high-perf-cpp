@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstdio>
 #include <chrono>
 #include <omp.h>
 #include "OpenMP.h"
@@ -61,11 +62,29 @@ void sections()
 	}
 }
 
+void single_master()
+{
+#pragma omp parallel
+	{
+#pragma omp single
+		printf("gathering input: %d\n", omp_get_thread_num());
+		
+		printf("in parallel on: %d\n", omp_get_thread_num());
+
+#pragma omp barrier
+		
+#pragma omp master
+		printf("output on: %d\n", omp_get_thread_num());
+	}
+}
+
 int main() 
 {
 	//hello_openmp();
 	//pfor();
-	sections();
+	//sections();
+	single_master();
+
 	//getchar();
 	return 0;
 }
