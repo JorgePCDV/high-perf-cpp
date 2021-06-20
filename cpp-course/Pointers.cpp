@@ -14,5 +14,7 @@ void Pointers()
 	// Heap
 	char* buffer = new char[8];
 	memset(buffer, 0, 8);
-	delete[] buffer;
+
+	// Pointer to pointer
+	char** buffer_ptr = &buffer;
 }
