@@ -3,10 +3,14 @@
 
 #include <iostream>
 #include "Log.h"
+#include "Pointers.h"
 
 int main()
 {
-    Log("init");
+    // Log("init");
+    Pointers();
+    std::cin.get();
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
