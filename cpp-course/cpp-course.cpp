@@ -5,12 +5,14 @@
 #include "Log.h"
 #include "Pointers.h"
 #include "References.h"
+#include "Player.h"
 
 int main()
 {
     // Log("init");
     //Pointers();
-    References();
+    //References();
+    PlayerExample();
     std::cin.get();
 
 }

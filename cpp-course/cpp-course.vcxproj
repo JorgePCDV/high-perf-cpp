@@ -149,11 +149,13 @@
   <ItemGroup>
     <ClCompile Include="cpp-course.cpp" />
     <ClCompile Include="Log.cpp" />
+    <ClCompile Include="Player.cpp" />
     <ClCompile Include="Pointers.cpp" />
     <ClCompile Include="References.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Log.h" />
+    <ClInclude Include="Player.h" />
     <ClInclude Include="Pointers.h" />
     <ClInclude Include="References.h" />
   </ItemGroup>
