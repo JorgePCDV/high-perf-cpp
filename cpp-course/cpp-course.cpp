@@ -4,11 +4,13 @@
 #include <iostream>
 #include "Log.h"
 #include "Pointers.h"
+#include "References.h"
 
 int main()
 {
     // Log("init");
-    Pointers();
+    //Pointers();
+    References();
     std::cin.get();
 
 }

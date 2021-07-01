@@ -150,10 +150,12 @@
     <ClCompile Include="cpp-course.cpp" />
     <ClCompile Include="Log.cpp" />
     <ClCompile Include="Pointers.cpp" />
+    <ClCompile Include="References.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Log.h" />
     <ClInclude Include="Pointers.h" />
+    <ClInclude Include="References.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
