@@ -6,13 +6,15 @@
 #include "Pointers.h"
 #include "References.h"
 #include "Player.h"
+#include "LogClassExample.h"
 
 int main()
 {
     // Log("init");
     //Pointers();
     //References();
-    PlayerExample();
+    //PlayerExample();
+    ClassStructure();
     std::cin.get();
 
 }
