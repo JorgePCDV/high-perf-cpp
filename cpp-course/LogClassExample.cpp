@@ -5,7 +5,7 @@
 void ClassStructure()
 {
 	LogClassExample logClass;
-	//logClass.SetLevel(LogLevelWarning);
+	logClass.SetLevel(logClass.LogLevelWarning);
 	logClass.LogMessage("Error");
 	std::cin.get();
 }
