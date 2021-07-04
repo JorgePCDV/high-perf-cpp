@@ -7,6 +7,7 @@
 #include "References.h"
 #include "Player.h"
 #include "LogClassExample.h"
+#include "Entity.h"
 
 int main()
 {
@@ -14,9 +15,8 @@ int main()
     //Pointers();
     //References();
     //PlayerExample();
-    ClassStructure();
-    std::cin.get();
-
+    //ClassStructure();
+    Constructors();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

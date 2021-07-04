@@ -148,6 +148,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="cpp-course.cpp" />
+    <ClCompile Include="Entity.cpp" />
     <ClCompile Include="Log.cpp" />
     <ClCompile Include="LogClassExample.cpp" />
     <ClCompile Include="Player.cpp" />
@@ -155,6 +156,7 @@
     <ClCompile Include="References.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Entity.h" />
     <ClInclude Include="Log.h" />
     <ClInclude Include="LogClassExample.h" />
     <ClInclude Include="Player.h" />
