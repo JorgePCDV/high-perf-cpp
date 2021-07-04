@@ -13,6 +13,7 @@ void Constructors()
 
 Entity::Entity()
 {
+	std::cout << "Constructed Entity" << std::endl;
 	x = 0.0f;
 	y = 0.0f;
 }
@@ -21,6 +22,11 @@ Entity::Entity(float X, float Y)
 {
 	x = X;
 	y = Y;
+}
+
+Entity::~Entity()
+{
+	std::cout << "Entity Destroyed" << std::endl;
 }
 
 void Entity::Print()
