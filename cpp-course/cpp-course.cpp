@@ -8,6 +8,7 @@
 #include "Player.h"
 #include "LogClassExample.h"
 #include "Entity.h"
+#include "PlayerEntity.h"
 
 int main()
 {
@@ -16,7 +17,8 @@ int main()
     //References();
     //PlayerExample();
     //ClassStructure();
-    Constructors();
+    //Constructors();
+    Inheritance();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

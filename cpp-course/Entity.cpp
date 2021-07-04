@@ -24,6 +24,12 @@ Entity::Entity(float X, float Y)
 	y = Y;
 }
 
+void Entity::Move(float xa, float ya)
+{
+	x += xa;
+	y += ya;
+}
+
 Entity::~Entity()
 {
 	std::cout << "Entity Destroyed" << std::endl;

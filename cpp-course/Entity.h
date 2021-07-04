@@ -6,6 +6,7 @@ public:
 	
 	Entity();
 	Entity(float X, float Y);
+	void Move(float xa, float ya);
 
 	~Entity();
 
