@@ -5,17 +5,34 @@
 void ClassStructure()
 {
 	LogClassExample logClass;
-	logClass.SetLevel(logClass.LogLevelWarning);
-	logClass.LogMessage("Error");
+	logClass.SetLevel(logClass.Info);
+	logClass.ErrorMessage("Error");
+	logClass.WarnMessage("Warn");
+	logClass.InfoMessage("Info");
 	std::cin.get();
 }
 
-void LogClassExample::SetLevel(int level)
+void LogClassExample::SetLevel(LogClassExample::Level level)
 {
 	m_LogLevel = level;
 }
 
-void LogClassExample::LogMessage(const char* message)
+void LogClassExample::ErrorMessage(const char* message)
 {
-	std::cout << "[" << m_LogLevel << "]" << message << std::endl;
+	if(m_LogLevel >= LogClassExample::Error)
+		std::cout << "[ERROR]:" << message << std::endl;
 }
+
+void LogClassExample::WarnMessage(const char* message)
+{
+	if(m_LogLevel >= LogClassExample::Warn)
+		std::cout << "[WARN]:" << message << std::endl;
+}
+
+void LogClassExample::InfoMessage(const char* message)
+{
+	if(m_LogLevel >= LogClassExample::Info)
+		std::cout << "[INFO]:" << message << std::endl;
+}
+
+
