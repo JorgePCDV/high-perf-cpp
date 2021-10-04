@@ -3,6 +3,7 @@
 
 void PlayerEntity::PrintName()
 {
+	// check
 	std::cout << "Name: " << Name << std::endl;
 }
 
