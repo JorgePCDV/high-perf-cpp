@@ -155,6 +155,7 @@
     <ClCompile Include="PlayerEntity.cpp" />
     <ClCompile Include="Pointers.cpp" />
     <ClCompile Include="References.cpp" />
+    <ClCompile Include="vanilla_option.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Entity.h" />
@@ -164,6 +165,7 @@
     <ClInclude Include="PlayerEntity.h" />
     <ClInclude Include="Pointers.h" />
     <ClInclude Include="References.h" />
+    <ClInclude Include="vanilla_option.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
