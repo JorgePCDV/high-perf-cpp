@@ -68,5 +68,8 @@
     <ClInclude Include="vanilla_option.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="payoff.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
