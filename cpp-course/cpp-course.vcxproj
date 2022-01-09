@@ -152,6 +152,7 @@
     <ClCompile Include="Log.cpp" />
     <ClCompile Include="LogClassExample.cpp" />
     <ClCompile Include="payoff.cpp" />
+    <ClCompile Include="payoff_double_digital.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="PlayerEntity.cpp" />
     <ClCompile Include="Pointers.cpp" />

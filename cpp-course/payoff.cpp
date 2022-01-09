@@ -10,7 +10,7 @@ PayOff::PayOff() {}
 // ==========
 
 // Constructor with single strike parameter
-PayOffCall::PayOffCall(const double _K) { K = _K }
+PayOffCall::PayOffCall(const double _K) { K = _K; }
 
 // Over-ridden operator() method, which turns PayOffCall into a function object
 double PayOffCall::operator() (const double S) const {
@@ -22,7 +22,7 @@ double PayOffCall::operator() (const double S) const {
 // ==========
 
 // Constructor with single strike parameter
-PayOffPut::PayOffPut(const double _K) { K = _K }
+PayOffPut::PayOffPut(const double _K) { K = _K; }
 
 // Over-ridden operator() method, which turns PayOffPut into a function object
 double PayOffPut::operator() (const double S) const {

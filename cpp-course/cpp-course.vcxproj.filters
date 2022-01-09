@@ -45,6 +45,9 @@
     <ClCompile Include="payoff.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="payoff_double_digital.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Log.h">
