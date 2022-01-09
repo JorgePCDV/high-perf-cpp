@@ -162,6 +162,7 @@
     <ClInclude Include="Log.h" />
     <ClInclude Include="LogClassExample.h" />
     <ClInclude Include="payoff.h" />
+    <ClInclude Include="payoff_double_digital.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="PlayerEntity.h" />
     <ClInclude Include="Pointers.h" />
