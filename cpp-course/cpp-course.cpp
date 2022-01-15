@@ -4,6 +4,7 @@
 #include <iostream>
 #include "vanilla_option.h"
 #include "payoff_double_digital.h"
+#include "simple_matrix.h"
 
 
 #include "Log.h"
@@ -47,11 +48,29 @@ void PayOffDoubleDigitalExample() {
     std::cout << "Spot = 25.0: " << pay(25.0) << std::endl;
 }
 
+void SimpleMatrixExample();
+void SimpleMatrixExample()
+{
+    // Create empty SimpleMatrix of type double
+    SimpleMatrix<double> sm(4, 4, 0.0);
+
+    // Output values of the SimpleMatrix
+    for (int i = 0; i < 4; i++)
+    {
+        for (int j = 0; j < 4; j++)
+        {
+            std::cout << sm.value(i, j) << "\t";
+        }
+        std::cout << std::endl;
+    }
+}
+
+
 int main()
 {
     //VanillaOptionExample();
-    PayOffDoubleDigitalExample();
-    
+    //PayOffDoubleDigitalExample();
+    SimpleMatrixExample();
     
     
     // Log("init");
