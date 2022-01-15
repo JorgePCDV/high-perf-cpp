@@ -157,6 +157,7 @@
     <ClCompile Include="PlayerEntity.cpp" />
     <ClCompile Include="Pointers.cpp" />
     <ClCompile Include="References.cpp" />
+    <ClCompile Include="simple_matrix.cpp" />
     <ClCompile Include="vanilla_option.cpp" />
   </ItemGroup>
   <ItemGroup>
