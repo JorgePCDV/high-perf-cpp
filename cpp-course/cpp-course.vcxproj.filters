@@ -80,5 +80,8 @@
     <ClInclude Include="payoff_double_digital.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="simple_matrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
