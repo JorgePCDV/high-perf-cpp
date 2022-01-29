@@ -5,6 +5,7 @@
 #include "vanilla_option.h"
 #include "payoff_double_digital.h"
 #include "simple_matrix.h"
+#include "binary_function.h"
 
 
 #include "Log.h"
@@ -70,7 +71,8 @@ int main()
 {
     //VanillaOptionExample();
     //PayOffDoubleDigitalExample();
-    SimpleMatrixExample();
+    //SimpleMatrixExample();
+    BinaryFunctionExample();
     
     
     // Log("init");
