@@ -154,4 +154,21 @@ QSMatrix<T>& QSMatrix<T>::operator*=(const QSMatrix<T>& rhs)
     return *this;
 }
 
+// Calculate a transpose of this matrix
+template<typename T>
+QSMatrix<T> QSMatrix<T>::transpose()
+{
+    QSMatrix result(rows, cols, 0.0);
+
+    for (unsigned i = 0; i < rows; i++)
+    {
+        for (unsigned j = 0; j < cols; j++)
+        {
+            result(i, j) = this->mat[j][i];
+        }
+    }
+
+    return result;
+}
+
 #endif
