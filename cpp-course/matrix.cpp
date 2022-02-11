@@ -109,7 +109,7 @@ QSMatrix<T> QSMatrix<T>::operator-(const QSMatrix<T>& rhs)
 
 // Cumulative substration of this matrix and another
 template<typename T>
-QSMatrix<T>& QSMatrix<T>::operator+=(const QSMatrix<T>& rhs)
+QSMatrix<T>& QSMatrix<T>::operator-=(const QSMatrix<T>& rhs)
 {
     unsigned rows = rhs.get_rows();
     unsigned cols = rhs.get_cols();
@@ -122,6 +122,35 @@ QSMatrix<T>& QSMatrix<T>::operator+=(const QSMatrix<T>& rhs)
         }
     }
 
+    return *this;
+}
+// Left multiplication of this matrix and another
+template<typename T>
+QSMatrix<T> QSMatrix<T>::operator*(const QSMatrix<T>& rhs)
+{
+    unsigned rows = rhs.get_rows();
+    unsigned cols = rhs.get_cols();
+    QSMatrix result(rows, cols, 0.0);
+
+    for (unsigned i = 0; i < rows; i++)
+    {
+        for (unsigned j = 0; j < cols; j++)
+        {
+            for (unsigned k = 0; k < rows; k++)
+            {
+                result(i, j) += this->mat[i][k] * rhs(k, j);
+            }
+        }
+    }
+    
+    return result;
+}
+
+template<typename T>
+QSMatrix<T>& QSMatrix<T>::operator*=(const QSMatrix<T>& rhs)
+{
+    QSMatrix result = (*this) * rhs;
+    (*this) = result;
     return *this;
 }
 
