@@ -90,4 +90,39 @@ QSMatrix<T>& QSMatrix<T>::operator+=(const QSMatrix<T>& rhs)
     return *this;
 }
 
+// Substraction of this matrix and another
+template<typename T>
+QSMatrix<T> QSMatrix<T>::operator-(const QSMatrix<T>& rhs)
+{
+    QSMatrix result(rows, cols, 0.0);
+
+    for (unsigned i = 0; i < rows; i++)
+    {
+        for (unsigned j = 0; j < cols; j++)
+        {
+            result(i, j) = this->mat[i][j] - rhs(i, j);
+        }
+    }
+
+    return result;
+}
+
+// Cumulative substration of this matrix and another
+template<typename T>
+QSMatrix<T>& QSMatrix<T>::operator+=(const QSMatrix<T>& rhs)
+{
+    unsigned rows = rhs.get_rows();
+    unsigned cols = rhs.get_cols();
+
+    for (unsigned i = 0; i < rows; i++)
+    {
+        for (unsigned j = 0; j < cols; j++)
+        {
+            this->mat[i][j] -= rhs(i, j);
+        }
+    }
+
+    return *this;
+}
+
 #endif
