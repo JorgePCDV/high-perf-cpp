@@ -37,13 +37,15 @@ public:
 	std::vector<T> diag_vec();
 
 	// Access the individual elements
-	T& operator()(const unsigned & row, const unsigned& col);
-	const T& operator(const unsigned& row, const unsigned& col) const;
+	T& operator()(const unsigned& row, const unsigned& col);
+	const T& operator()(const unsigned& row, const unsigned& col) const;
 
 	// Access the row and column sizes
 	unsigned get_rows() const;
 	unsigned get_cols() const;
 	
 };
+
+void QSMatrixExample(); 
 
 #endif

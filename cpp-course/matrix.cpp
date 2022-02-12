@@ -2,6 +2,7 @@
 #define __QS_MATRIX_CPP
 
 #include "matrix.h"
+#include <iostream>
 
 // Parameter Constructor
 template<typename T>
@@ -277,9 +278,8 @@ T& QSMatrix<T>::operator()(const unsigned& row, const unsigned& col)
     return this->mat[row][col];
 }
 
-// Access the individual elements (const)
 template<typename T>
-T& QSMatrix<T>::operator()(const unsigned& row, const unsigned& col)
+const T& QSMatrix<T>::operator()(const unsigned& row, const unsigned& col) const
 {
     return this->mat[row][col];
 }
@@ -291,7 +291,7 @@ unsigned QSMatrix<T>::get_rows() const
     return this->rows;
 }
 
-// Get the numberof columns of the matrix
+// Get the number of columns of the matrix
 template<typename T>
 unsigned QSMatrix<T>::get_cols() const
 {
@@ -299,3 +299,20 @@ unsigned QSMatrix<T>::get_cols() const
 }
 
 #endif
+
+void QSMatrixExample()
+{
+    QSMatrix<double> mat1(10, 10, 1.0);
+    QSMatrix<double> mat2(10, 10, 2.0);
+
+    QSMatrix<double> mat3 = mat1 + mat2;
+
+    for (int i = 0; i < mat3.get_rows(); i++)
+    {
+        for (int j = 0; j < mat3.get_cols(); j++)
+        {
+            std::cout << mat3(i, j) << ", ";
+        }
+        std::cout << std::endl;
+    }
+}
