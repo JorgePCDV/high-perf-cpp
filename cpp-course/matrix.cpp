@@ -171,4 +171,74 @@ QSMatrix<T> QSMatrix<T>::transpose()
     return result;
 }
 
+// Matrix scalar addition
+template<typename T>
+QSMatrix<T> QSMatrix<T>::operator+(const T& rhs)
+{
+    QSMatrix result(rows, cols, 0.0);
+
+    for (unsigned i = 0; i < rows; i++)
+    {
+        for (unsigned j = 0; j < cols; j++)
+        {
+            result(i, j) = this->mat[i][j] + rhs;
+        }
+    }
+
+    return result;
+}
+
+// Matrix scalar substraction
+template<typename T>
+QSMatrix<T> QSMatrix<T>::operator-(const T& rhs)
+{
+    QSMatrix result(rows, cols, 0.0);
+
+    for (unsigned i = 0; i < rows; i++)
+    {
+        for (unsigned j = 0; j < cols; j++)
+        {
+            result(i, j) = this->mat[i][j] - rhs;
+        }
+    }
+
+    return result;
+}
+
+// Matrix scalar multiplication
+template<typename T>
+QSMatrix<T> QSMatrix<T>::operator*(const T& rhs)
+{
+    QSMatrix result(rows, cols, 0.0);
+
+    for (unsigned i = 0; i < rows; i++)
+    {
+        for (unsigned j = 0; j < cols; j++)
+        {
+            result(i, j) = this->mat[i][j] * rhs;
+        }
+    }
+
+    return result;
+}
+
+// Matrix scalar division
+template<typename T>
+QSMatrix<T> QSMatrix<T>::operator/(const T& rhs)
+{
+    QSMatrix result(rows, cols, 0.0);
+
+    for (unsigned i = 0; i < rows; i++)
+    {
+        for (unsigned j = 0; j < cols; j++)
+        {
+            result(i, j) = this->mat[i][j] / rhs;
+        }
+    }
+
+    return result;
+}
+
+
+
 #endif
