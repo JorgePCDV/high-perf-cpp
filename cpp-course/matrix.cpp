@@ -270,6 +270,32 @@ std::vector<T> QSMatrix<T>::diag_vec()
     return result;
 }
 
+// Access the individual elements
+template<typename T>
+T& QSMatrix<T>::operator()(const unsigned& row, const unsigned& col)
+{
+    return this->mat[row][col];
+}
 
+// Access the individual elements (const)
+template<typename T>
+T& QSMatrix<T>::operator()(const unsigned& row, const unsigned& col)
+{
+    return this->mat[row][col];
+}
+
+// Get the number of rows of the matrix
+template<typename T>
+unsigned QSMatrix<T>::get_rows() const
+{
+    return this->rows;
+}
+
+// Get the numberof columns of the matrix
+template<typename T>
+unsigned QSMatrix<T>::get_cols() const
+{
+    return this->cols;
+}
 
 #endif
