@@ -239,6 +239,37 @@ QSMatrix<T> QSMatrix<T>::operator/(const T& rhs)
     return result;
 }
 
+// Multiply with a vector
+template<typename T>
+std::vector<T> QSMatrix<T>::operator*(const std::vector<T>& rhs)
+{
+    std::vector<T> result(rhs.size(), 0.0);
+
+    for (unsigned i = 0; i < rows; i++)
+    {
+        for (unsigned j = 0; j < cols; j++)
+        {
+            result[i] = this->mat[i][j] * rhs[j];
+        }
+    }
+    
+    return result;
+}
+
+// Obtain a vector of the diagonal elements
+template<typename T>
+std::vector<T> QSMatrix<T>::diag_vec()
+{
+    std::vector<T> result(rows, 0.0);
+
+    for (unsigned i = 0; i < rows; i++)
+    {
+        result[i] = this->mat[i][i];
+    }
+
+    return result;
+}
+
 
 
 #endif
