@@ -7,6 +7,7 @@
 #include "simple_matrix.h"
 #include "binary_function.h"
 #include "matrix.h"
+#include <Eigen/Dense>
 
 
 #include "Log.h"
@@ -16,6 +17,17 @@
 #include "LogClassExample.h"
 #include "Entity.h"
 #include "PlayerEntity.h"
+
+void EigenMatrixExampleOne();
+void EigenMatrixExampleOne() {
+    Eigen::MatrixXd m(3, 3);
+
+    m << 1, 2, 3,
+         4, 5, 6,
+         7, 8, 9;
+
+    std::cout << m << std::endl;
+}
 
 void VanillaOptionExample();
 void VanillaOptionExample() {
@@ -74,8 +86,9 @@ int main()
     //PayOffDoubleDigitalExample();
     //SimpleMatrixExample();
     //BinaryFunctionExample();
-    QSMatrixExample();
-    
+    //QSMatrixExample();
+    EigenMatrixExampleOne();
+
     // Log("init");
     //Pointers();
     //References();
