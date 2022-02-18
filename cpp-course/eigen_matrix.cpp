@@ -79,3 +79,13 @@ void EigenMatrixTransposition()
 	// Output the in-place transpose of p
 	std::cout << "p^T =\n" << p << std::endl;
 }
+
+void EigenMatrixVector()
+{
+	Eigen::Vector3d r(10,20,30);
+	Eigen::Vector3d s(40,50,60);
+
+	// Apply dot and cross products
+	std::cout << "r . s=\n" << r.dot(s) << std::endl;
+	std::cout << "r x s=\n" << r.cross(s) << std::endl;
+}
