@@ -91,7 +91,8 @@ int main()
     //EigenMatrixExampleOne();
     //EigenMatrixMatrix();
     //EigenMatrixReduction();
-    EigenMatrixScalarArithmetic();
+    //EigenMatrixScalarArithmetic();
+    EigenMatrixTransposition();
 
     // Log("init");
     //Pointers();

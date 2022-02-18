@@ -66,3 +66,16 @@ void EigenMatrixScalarArithmetic()
 	std::cout << "r+s=\n" << r + s << std::endl;
 	std::cout << "r-s=\n" << r - s << std::endl;
 }
+
+void EigenMatrixTransposition()
+{
+	// Declare a 3x3 matrix with random entries
+	Eigen::Matrix3d p = Eigen::Matrix3d::Random(3, 3);
+
+	std::cout << "p^T =\n" << p.transpose() << std::endl;
+	
+	p.transposeInPlace();
+
+	// Output the in-place transpose of p
+	std::cout << "p^T =\n" << p << std::endl;
+}
