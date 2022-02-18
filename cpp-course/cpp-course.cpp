@@ -89,7 +89,8 @@ int main()
     //BinaryFunctionExample();
     //QSMatrixExample();
     //EigenMatrixExampleOne();
-    EigenMatrixMatrix();
+    //EigenMatrixMatrix();
+    EigenMatrixReduction();
 
     // Log("init");
     //Pointers();
