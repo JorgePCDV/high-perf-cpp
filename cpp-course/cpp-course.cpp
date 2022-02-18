@@ -7,6 +7,7 @@
 #include "simple_matrix.h"
 #include "binary_function.h"
 #include "matrix.h"
+#include "eigen_matrix.h"
 #include <Eigen/Dense>
 
 
@@ -87,7 +88,8 @@ int main()
     //SimpleMatrixExample();
     //BinaryFunctionExample();
     //QSMatrixExample();
-    EigenMatrixExampleOne();
+    //EigenMatrixExampleOne();
+    EigenMatrixMatrix();
 
     // Log("init");
     //Pointers();
