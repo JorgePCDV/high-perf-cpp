@@ -90,7 +90,8 @@ int main()
     //QSMatrixExample();
     //EigenMatrixExampleOne();
     //EigenMatrixMatrix();
-    EigenMatrixReduction();
+    //EigenMatrixReduction();
+    EigenMatrixScalarArithmetic();
 
     // Log("init");
     //Pointers();
