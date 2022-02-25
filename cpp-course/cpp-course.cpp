@@ -93,7 +93,8 @@ int main()
     //EigenMatrixReduction();
     //EigenMatrixScalarArithmetic();
     //EigenMatrixTransposition();
-    EigenMatrixVector();
+    //EigenMatrixVector();
+    EigenLuDecomposition();
 
     // Log("init");
     //Pointers();
