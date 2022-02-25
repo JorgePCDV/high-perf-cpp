@@ -94,7 +94,8 @@ int main()
     //EigenMatrixScalarArithmetic();
     //EigenMatrixTransposition();
     //EigenMatrixVector();
-    EigenLuDecomposition();
+    //EigenLuDecomposition();
+    //ThomasAlgorithmExample();
 
     // Log("init");
     //Pointers();
