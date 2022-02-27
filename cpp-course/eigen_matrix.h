@@ -14,3 +14,5 @@ void thomas_algorithm(const std::vector<double>& a,
 					  const std::vector<double>& d,
 					  std::vector<double>& f);
 void ThomasAlgorithmExample();
+
+void CholeskyDecomposition();
