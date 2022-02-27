@@ -16,3 +16,4 @@ void thomas_algorithm(const std::vector<double>& a,
 void ThomasAlgorithmExample();
 
 void CholeskyDecomposition();
+void QrDecomposition();

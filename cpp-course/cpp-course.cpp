@@ -96,7 +96,8 @@ int main()
     //EigenMatrixVector();
     //EigenLuDecomposition();
     //ThomasAlgorithmExample();
-    CholeskyDecomposition();
+    //CholeskyDecomposition();
+    QrDecomposition();
 
     // Log("init");
     //Pointers();
