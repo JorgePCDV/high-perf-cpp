@@ -8,6 +8,7 @@
 #include "binary_function.h"
 #include "matrix.h"
 #include "eigen_matrix.h"
+#include "european_analytic.h"
 #include <Eigen/Dense>
 
 
@@ -97,7 +98,8 @@ int main()
     //EigenLuDecomposition();
     //ThomasAlgorithmExample();
     //CholeskyDecomposition();
-    QrDecomposition();
+    //QrDecomposition();
+    EuropeanAnalyticExample();
 
     // Log("init");
     //Pointers();

@@ -151,6 +151,7 @@
     <ClCompile Include="cpp-course.cpp" />
     <ClCompile Include="eigen_matrix.cpp" />
     <ClCompile Include="Entity.cpp" />
+    <ClCompile Include="european_analytic.cpp" />
     <ClCompile Include="Log.cpp" />
     <ClCompile Include="LogClassExample.cpp" />
     <ClCompile Include="matrix.cpp" />
@@ -167,6 +168,7 @@
     <ClInclude Include="binary_function.h" />
     <ClInclude Include="eigen_matrix.h" />
     <ClInclude Include="Entity.h" />
+    <ClInclude Include="european_analytic.h" />
     <ClInclude Include="Log.h" />
     <ClInclude Include="LogClassExample.h" />
     <ClInclude Include="matrix.h" />
