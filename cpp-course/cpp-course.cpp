@@ -9,6 +9,7 @@
 #include "matrix.h"
 #include "eigen_matrix.h"
 #include "european_analytic.h"
+#include "european_monte_carlo.h"
 #include <Eigen/Dense>
 
 
@@ -99,7 +100,8 @@ int main()
     //ThomasAlgorithmExample();
     //CholeskyDecomposition();
     //QrDecomposition();
-    EuropeanAnalyticExample();
+    //EuropeanAnalyticExample();
+    EuropeanMonteCarlo();
 
     // Log("init");
     //Pointers();
