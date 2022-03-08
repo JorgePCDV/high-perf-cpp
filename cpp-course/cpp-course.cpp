@@ -10,6 +10,7 @@
 #include "eigen_matrix.h"
 #include "european_analytic.h"
 #include "european_monte_carlo.h"
+#include "black_scholes.h"
 #include <Eigen/Dense>
 
 
@@ -101,7 +102,8 @@ int main()
     //CholeskyDecomposition();
     //QrDecomposition();
     //EuropeanAnalyticExample();
-    EuropeanMonteCarlo();
+    //EuropeanMonteCarlo();
+    GreeksAnalyticExample();
 
     // Log("init");
     //Pointers();
