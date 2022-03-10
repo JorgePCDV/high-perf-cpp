@@ -103,7 +103,8 @@ int main()
     //QrDecomposition();
     //EuropeanAnalyticExample();
     //EuropeanMonteCarlo();
-    GreeksAnalyticExample();
+    //GreeksAnalyticExample();
+    GreeksFiniteDifferenceMethod();
 
     // Log("init");
     //Pointers();

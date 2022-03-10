@@ -21,3 +21,4 @@ double call_delta_fdm(const double S, const double K, const double r, const doub
 double call_gamma_fdm(const double S, const double K, const double r, const double v, const double T, const double delta_S);
 
 void GreeksAnalyticExample();
+void GreeksFiniteDifferenceMethod();
