@@ -31,3 +31,4 @@ double call_gamma_mc(const int num_sims, const double S, const double K, const d
 
 void GreeksAnalyticExample();
 void GreeksFiniteDifferenceMethod();
+void GreeksMonteCarloExample();

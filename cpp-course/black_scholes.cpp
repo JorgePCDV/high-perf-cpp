@@ -254,3 +254,31 @@ void GreeksFiniteDifferenceMethod()
     std::cout << "Call Delta:        " << call_delta_f << std::endl;
     std::cout << "Call Gamma:        " << call_gamma_f << std::endl;
 }
+
+void GreeksMonteCarloExample()
+{
+    // First we create the parameter list
+    double S = 100.0;            // Option price
+    double delta_S = 0.001;      // Option price increment
+    double K = 100.0;            // Strike price
+    double r = 0.05;             // Risk-free rate (5%)
+    double v = 0.2;              // Volatility of the underlying (20%)
+    double T = 1.0;              // One year until expiry
+    int num_sims = 100000;    // Number of simulations to carry out for Monte Carlo    
+
+    // Then we calculate the Delta and the Gamma for the call
+    double call_delta_m = call_delta_mc(num_sims, S, K, r, v, T, delta_S);
+    double call_gamma_m = call_gamma_mc(num_sims, S, K, r, v, T, delta_S);
+
+    // Finally we output the parameters and greeks
+    std::cout << "Number of sims:    " << num_sims << std::endl;
+    std::cout << "Underlying:        " << S << std::endl;
+    std::cout << "Delta underlying:  " << delta_S << std::endl;
+    std::cout << "Strike:            " << K << std::endl;
+    std::cout << "Risk-Free Rate:    " << r << std::endl;
+    std::cout << "Volatility:        " << v << std::endl;
+    std::cout << "Maturity:          " << T << std::endl << std::endl;
+
+    std::cout << "Call Delta:        " << call_delta_m << std::endl;
+    std::cout << "Call Gamma:        " << call_gamma_m << std::endl;
+}

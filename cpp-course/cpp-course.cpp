@@ -104,7 +104,8 @@ int main()
     //EuropeanAnalyticExample();
     //EuropeanMonteCarlo();
     //GreeksAnalyticExample();
-    GreeksFiniteDifferenceMethod();
+    //GreeksFiniteDifferenceMethod();
+    GreeksMonteCarloExample();
 
     // Log("init");
     //Pointers();
