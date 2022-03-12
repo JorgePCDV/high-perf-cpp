@@ -20,5 +20,14 @@ double put_rho(const double S, const double K, const double r, const double v, c
 double call_delta_fdm(const double S, const double K, const double r, const double v, const double T, const double delta_S);
 double call_gamma_fdm(const double S, const double K, const double r, const double v, const double T, const double delta_S);
 
+void monte_carlo_call_price(const int num_sims,
+    const double S, const double K, const double r,
+    const double v, const double T, const double delta_S,
+    double& price_Sp, double& price_S, double& price_Sm);
+double call_delta_mc(const int num_sims, const double S, const double K, const double r, const double v, const double T, const double delta_S);
+double call_gamma_mc(const int num_sims, const double S, const double K, const double r, const double v, const double T, const double delta_S);
+
+
+
 void GreeksAnalyticExample();
 void GreeksFiniteDifferenceMethod();
