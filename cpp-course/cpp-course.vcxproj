@@ -147,6 +147,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="asian.cpp" />
     <ClCompile Include="binary_function.cpp" />
     <ClCompile Include="black_scholes.cpp" />
     <ClCompile Include="cpp-course.cpp" />
@@ -167,6 +168,7 @@
     <ClCompile Include="vanilla_option.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="asian.h" />
     <ClInclude Include="binary_function.h" />
     <ClInclude Include="black_scholes.h" />
     <ClInclude Include="eigen_matrix.h" />
