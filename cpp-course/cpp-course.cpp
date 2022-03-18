@@ -11,6 +11,7 @@
 #include "european_analytic.h"
 #include "european_monte_carlo.h"
 #include "black_scholes.h"
+#include "asian.h"
 #include <Eigen/Dense>
 
 
@@ -105,7 +106,8 @@ int main()
     //EuropeanMonteCarlo();
     //GreeksAnalyticExample();
     //GreeksFiniteDifferenceMethod();
-    GreeksMonteCarloExample();
+    //GreeksMonteCarloExample();
+    AsianOptionExample();
 
     // Log("init");
     //Pointers();

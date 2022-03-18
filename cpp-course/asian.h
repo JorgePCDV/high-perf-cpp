@@ -36,4 +36,6 @@ public:
 	virtual double pay_off_price(const std::vector<double>& spot_prices) const;
 };
 
+void AsianOptionExample();
+
 #endif
