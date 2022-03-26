@@ -131,6 +131,9 @@
     <ClInclude Include="path_generate.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="interval_bisection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

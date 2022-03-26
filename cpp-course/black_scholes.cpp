@@ -1,3 +1,6 @@
+#ifndef __BLACK_SCHOLES_CPP
+#define __BLACK_SCHOLES_CPP
+
 #define _USE_MATH_DEFINES
 
 #include <iostream>
@@ -282,3 +285,13 @@ void GreeksMonteCarloExample()
     std::cout << "Call Delta:        " << call_delta_m << std::endl;
     std::cout << "Call Gamma:        " << call_gamma_m << std::endl;
 }
+
+BlackScholesCall::BlackScholesCall(double _S, double _K, 
+                                   double _r, double _T) :
+    S(_S), K(_K), r(_r), T(_T) {}
+
+double BlackScholesCall::operator()(double sigma) const {
+    return call_price(S, K, r, sigma, T);
+}
+
+#endif
