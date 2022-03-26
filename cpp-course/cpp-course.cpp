@@ -11,6 +11,7 @@
 #include "european_analytic.h"
 #include "european_monte_carlo.h"
 #include "black_scholes.h"
+#include "interval_bisection.h"
 #include "asian.h"
 #include <Eigen/Dense>
 
@@ -107,7 +108,8 @@ int main()
     //GreeksAnalyticExample();
     //GreeksFiniteDifferenceMethod();
     //GreeksMonteCarloExample();
-    AsianOptionExample();
+    //AsianOptionExample();
+    IntervalBisectionExample();
 
     // Log("init");
     //Pointers();
