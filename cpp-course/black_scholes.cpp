@@ -294,4 +294,13 @@ double BlackScholesCall::operator()(double sigma) const {
     return call_price(S, K, r, sigma, T);
 }
 
+double BlackScholesCall::option_price(double sigma) const
+{
+    return call_price(S, K, r, sigma, T);
+}
+
+double BlackScholesCall::option_vega(double sigma) const {
+    return call_vega(S, K, r, sigma, T);
+}
+
 #endif

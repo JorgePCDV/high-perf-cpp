@@ -13,6 +13,7 @@
 #include "black_scholes.h"
 #include "interval_bisection.h"
 #include "asian.h"
+#include "newton_raphson.h"
 #include <Eigen/Dense>
 
 
@@ -109,7 +110,8 @@ int main()
     //GreeksFiniteDifferenceMethod();
     //GreeksMonteCarloExample();
     //AsianOptionExample();
-    IntervalBisectionExample();
+    //IntervalBisectionExample();
+    NewtonRaphsonExample();
 
     // Log("init");
     //Pointers();

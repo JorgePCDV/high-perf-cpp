@@ -179,6 +179,7 @@
     <ClInclude Include="Log.h" />
     <ClInclude Include="LogClassExample.h" />
     <ClInclude Include="matrix.h" />
+    <ClInclude Include="newton_raphson.h" />
     <ClInclude Include="path_generate.h" />
     <ClInclude Include="payoff.h" />
     <ClInclude Include="payoff_double_digital.h" />
