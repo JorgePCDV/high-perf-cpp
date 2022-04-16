@@ -14,6 +14,7 @@
 #include "interval_bisection.h"
 #include "asian.h"
 #include "newton_raphson.h"
+#include "lin_con_gen.h"
 #include <Eigen/Dense>
 
 
@@ -111,7 +112,8 @@ int main()
     //GreeksMonteCarloExample();
     //AsianOptionExample();
     //IntervalBisectionExample();
-    NewtonRaphsonExample();
+    //NewtonRaphsonExample();
+    LinearCongruentialGeneratorExample();
 
     // Log("init");
     //Pointers();

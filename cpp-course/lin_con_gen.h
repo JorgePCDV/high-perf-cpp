@@ -3,6 +3,7 @@
 #define __LINEAR_CONGRUENTIAL_GENERATOR_H 
 
 #include "random.h"
+#include <iostream>
 
 class LinearCongruentialGenerator : public RandomNumberGenerator {
 private:
@@ -16,6 +17,8 @@ public:
 	virtual unsigned long get_random_integer();
 	virtual void get_uniform_draws(std::vector<double>& draws);
 };
+
+void LinearCongruentialGeneratorExample();
 
 #endif  
 
