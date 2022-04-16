@@ -72,6 +72,9 @@
     <ClCompile Include="asian.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="lin_con_gen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Log.h">

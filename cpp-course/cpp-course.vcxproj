@@ -155,6 +155,7 @@
     <ClCompile Include="Entity.cpp" />
     <ClCompile Include="european_analytic.cpp" />
     <ClCompile Include="european_monte_carlo.cpp" />
+    <ClCompile Include="lin_con_gen.cpp" />
     <ClCompile Include="Log.cpp" />
     <ClCompile Include="LogClassExample.cpp" />
     <ClCompile Include="matrix.cpp" />
