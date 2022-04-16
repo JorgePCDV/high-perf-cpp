@@ -176,6 +176,7 @@
     <ClInclude Include="european_analytic.h" />
     <ClInclude Include="european_monte_carlo.h" />
     <ClInclude Include="interval_bisection.h" />
+    <ClInclude Include="lin_con_gen.h" />
     <ClInclude Include="Log.h" />
     <ClInclude Include="LogClassExample.h" />
     <ClInclude Include="matrix.h" />
