@@ -166,6 +166,7 @@
     <ClCompile Include="Pointers.cpp" />
     <ClCompile Include="References.cpp" />
     <ClCompile Include="simple_matrix.cpp" />
+    <ClCompile Include="statistics.cpp" />
     <ClCompile Include="vanilla_option.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -191,6 +192,7 @@
     <ClInclude Include="random.h" />
     <ClInclude Include="References.h" />
     <ClInclude Include="simple_matrix.h" />
+    <ClInclude Include="statistics.h" />
     <ClInclude Include="vanilla_option.h" />
   </ItemGroup>
   <ItemGroup>

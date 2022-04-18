@@ -75,6 +75,9 @@
     <ClCompile Include="lin_con_gen.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="statistics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Log.h">
@@ -144,6 +147,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="lin_con_gen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="statistics.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -113,7 +113,7 @@ int main()
     //AsianOptionExample();
     //IntervalBisectionExample();
     //NewtonRaphsonExample();
-    LinearCongruentialGeneratorExample();
+    //LinearCongruentialGeneratorExample();
 
     // Log("init");
     //Pointers();
