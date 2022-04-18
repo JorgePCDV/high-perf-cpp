@@ -49,4 +49,6 @@ public:
         std::vector<double>& dist_draws);
 };
 
+void StandardNormalDistributionExample();
+
 #endif

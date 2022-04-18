@@ -15,6 +15,7 @@
 #include "asian.h"
 #include "newton_raphson.h"
 #include "lin_con_gen.h"
+#include "statistics.h"
 #include <Eigen/Dense>
 
 
@@ -114,6 +115,7 @@ int main()
     //IntervalBisectionExample();
     //NewtonRaphsonExample();
     //LinearCongruentialGeneratorExample();
+    StandardNormalDistributionExample();
 
     // Log("init");
     //Pointers();
