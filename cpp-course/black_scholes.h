@@ -53,4 +53,6 @@ void GreeksAnalyticExample();
 void GreeksFiniteDifferenceMethod();
 void GreeksMonteCarloExample();
 
+void BlackScholesJumpDiffusionExample();
+
 #endif

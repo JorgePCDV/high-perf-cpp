@@ -328,6 +328,24 @@ void GreeksMonteCarloExample()
     std::cout << "Call Gamma:        " << call_gamma_m << std::endl;
 }
 
+void BlackScholesJumpDiffusionExample()
+{
+    // First we create the parameter list
+    double S = 100.0;     // Option price
+    double K = 100.0;     // Strike price
+    double r = 0.05;      // Risk-free rate (5%)
+    double v = 0.2;       // Volatility of the underlying (20%)
+    double T = 1.0;       // One year until expiry
+    int N = 50;           // Terms in the finite sum approximation
+    double m = 1.083287;  // Scale factor for J
+    double lambda = 1.0;  // Intensity of jumps
+    double nu = 0.4;      // Stdev of lognormal jump process
+
+    // Then we calculate the call jump-diffusion value
+    double call_jd = bs_jd_call_price(S, K, r, v, T, N, m, lambda, nu);
+    std::cout << "Call Price under JD:      " << call_jd << std::endl;
+}
+
 BlackScholesCall::BlackScholesCall(double _S, double _K, 
                                    double _r, double _T) :
     S(_S), K(_K), r(_r), T(_T) {}
