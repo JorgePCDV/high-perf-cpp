@@ -112,6 +112,14 @@ double call_gamma_fdm(const double S, const double K, const double r, const doub
     return (call_price(S + delta_S, K, r, v, T) - 2 * call_price(S, K, r, v, T) + call_price(S - delta_S, K, r, v, T)) / (delta_S * delta_S);
 }
 
+// Calculate the European vanilla call price based on
+// underlying S, strike K, risk-free rate r, volatility of
+// underlying sigma and time to maturity T
+double bs_call_price(const double S, const double K, const double r, const double v, const double T)
+{
+    return S * norm_cdf(d_j(1, S, K, r, v, T)) - K * exp(-r * T) * norm_cdf(d_j(2, S, K, r, v, T));
+}
+
 // Pricing a European vanilla call option with a Monte Carlo method
 // Create three separate paths, each with either an increment, non-
 // increment or decrement based on delta_S, the stock path parameter
@@ -185,6 +193,40 @@ double call_gamma_mc(const int num_sims, const double S, const double K, const d
     // (We need all three for the Gamma) 
     monte_carlo_call_price(num_sims, S, K, r, v, T, delta_S, price_Sp, price_S, price_Sm);
     return (price_Sp - 2 * price_S + price_Sm) / (delta_S * delta_S);
+}
+
+// Calculate the Merton jump-diffusion price based on 
+// a finite sum approximation to the infinite series
+// solution, making use of the BS call price.
+double bs_jd_call_price(const double S, const double K, const double r, const double sigma, const double T, const int N, const double m, const double lambda, const double nu)
+{
+    double price = 0.0; // Stores the final call price
+    double factorial = 1.0;
+
+    // Precalculate lambda values
+    double lambda_p = lambda * m;
+    double lambda_p_T = lambda_p * T;
+
+    // Calculate the finite sum over N terms
+    for (int n = 0; n < N; n++)
+    {
+        double sigma_n = sqrt(sigma*sigma + n*nu*nu/T);
+        double r_n = r - lambda * (m - 1) + n * log(m) / T;
+
+        // Calculate n factorial
+        if (n == 0) {
+            factorial *= 1;
+        }
+        else {
+            factorial *= n;
+        }
+
+        // Refine the jump price over the loop
+        price += ((exp(-lambda_p_T) * pow(lambda_p_T, n)) / factorial) *
+            bs_call_price(S, K, r_n, sigma_n, T);
+    }
+
+    return price;
 }
 
 void GreeksAnalyticExample()

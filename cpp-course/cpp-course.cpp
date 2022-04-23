@@ -115,7 +115,7 @@ int main()
     //IntervalBisectionExample();
     //NewtonRaphsonExample();
     //LinearCongruentialGeneratorExample();
-    StandardNormalDistributionExample();
+    //StandardNormalDistributionExample();
 
     // Log("init");
     //Pointers();
