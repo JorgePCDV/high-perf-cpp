@@ -21,6 +21,8 @@ public:
         std::vector<double>& dist_draws);
 };
 
+void CorrelatedSndExample();
+
 
 #endif 
 
