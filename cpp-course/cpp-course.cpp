@@ -116,7 +116,7 @@ int main()
     //NewtonRaphsonExample();
     //LinearCongruentialGeneratorExample();
     //StandardNormalDistributionExample();
-    BlackScholesJumpDiffusionExample();
+    //BlackScholesJumpDiffusionExample();
 
     // Log("init");
     //Pointers();
