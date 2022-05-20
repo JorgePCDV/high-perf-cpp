@@ -156,10 +156,12 @@
     <ClCompile Include="Entity.cpp" />
     <ClCompile Include="european_analytic.cpp" />
     <ClCompile Include="european_monte_carlo.cpp" />
+    <ClCompile Include="heston_mc.cpp" />
     <ClCompile Include="lin_con_gen.cpp" />
     <ClCompile Include="Log.cpp" />
     <ClCompile Include="LogClassExample.cpp" />
     <ClCompile Include="matrix.cpp" />
+    <ClCompile Include="option.cpp" />
     <ClCompile Include="payoff.cpp" />
     <ClCompile Include="payoff_double_digital.cpp" />
     <ClCompile Include="Player.cpp" />
@@ -179,12 +181,14 @@
     <ClInclude Include="Entity.h" />
     <ClInclude Include="european_analytic.h" />
     <ClInclude Include="european_monte_carlo.h" />
+    <ClInclude Include="heston_mc.h" />
     <ClInclude Include="interval_bisection.h" />
     <ClInclude Include="lin_con_gen.h" />
     <ClInclude Include="Log.h" />
     <ClInclude Include="LogClassExample.h" />
     <ClInclude Include="matrix.h" />
     <ClInclude Include="newton_raphson.h" />
+    <ClInclude Include="option.h" />
     <ClInclude Include="path_generate.h" />
     <ClInclude Include="payoff.h" />
     <ClInclude Include="payoff_double_digital.h" />
