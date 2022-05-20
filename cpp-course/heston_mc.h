@@ -1,9 +1,12 @@
 #ifndef __HESTON_MC_H
 #define __HESTON_MC_H
 
+#include <iostream>
 #include <cmath>
 #include <vector>
+#include "payoff.h"
 #include "option.h"
+#include "correlated_snd.h"
 
 // The HestonEuler class stores the necessary information
 // for creating the volatility and spot paths based on the
@@ -32,5 +35,9 @@ public:
         const std::vector<double>& vol_path,
         std::vector<double>& spot_path);
 };
+
+void generate_normal_correlation_paths(double rho, std::vector<double>& spot_normals, std::vector<double>& cor_normals);
+
+void HestonMcExample();
 
 #endif

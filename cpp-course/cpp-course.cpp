@@ -17,6 +17,7 @@
 #include "lin_con_gen.h"
 #include "statistics.h"
 #include "correlated_snd.h"
+#include "heston_mc.h"
 #include <Eigen/Dense>
 
 
@@ -118,7 +119,8 @@ int main()
     //LinearCongruentialGeneratorExample();
     //StandardNormalDistributionExample();
     //BlackScholesJumpDiffusionExample();
-    CorrelatedSndExample();
+    //CorrelatedSndExample();
+    HestonMcExample();
 
     // Log("init");
     //Pointers();
