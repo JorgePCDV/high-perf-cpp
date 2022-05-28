@@ -18,6 +18,7 @@
 #include "statistics.h"
 #include "correlated_snd.h"
 #include "heston_mc.h"
+#include "fdm.h"
 #include <Eigen/Dense>
 
 
@@ -40,8 +41,8 @@ void EigenMatrixExampleOne() {
     std::cout << m << std::endl;
 }
 
-void VanillaOptionExample();
-void VanillaOptionExample() {
+//void VanillaOptionExample();
+/*void VanillaOptionExample() {
     VanillaOption option;  // Create the vanilla option
 
   // Calculate the call and put prices
@@ -58,7 +59,7 @@ void VanillaOptionExample() {
     // Output the option prices
     std::cout << "Call Price: " << call << std::endl;
     std::cout << "Put Price: " << put << std::endl;
-}
+}*/
 
 void PayOffDoubleDigitalExample();
 void PayOffDoubleDigitalExample() {
@@ -120,7 +121,8 @@ int main()
     //StandardNormalDistributionExample();
     //BlackScholesJumpDiffusionExample();
     //CorrelatedSndExample();
-    HestonMcExample();
+    //HestonMcExample();
+    FDMSolverExample();
 
     // Log("init");
     //Pointers();

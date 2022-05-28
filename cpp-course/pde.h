@@ -21,8 +21,8 @@ public:
 // Black-Scholes PDE
 class BlackScholesPDE : public ConvectionDiffusionPDE {
 public:
-	VanillaOption* option;
-	BlackScholesPDE(VanillaOption* _option);
+	VanillaOptionV2* option;
+	BlackScholesPDE(VanillaOptionV2* _option);
 
 	double diff_coeff(double t, double x) const;
 	double conv_coeff(double t, double x) const;

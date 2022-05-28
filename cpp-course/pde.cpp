@@ -4,7 +4,7 @@
 #include "pde.h"
 #include <math.h>
 
-BlackScholesPDE::BlackScholesPDE(VanillaOption* _option) : option(_option) {}
+BlackScholesPDE::BlackScholesPDE(VanillaOptionV2* _option) : option(_option) {}
 
 // Diffusion coefficient
 double BlackScholesPDE::diff_coeff(double t, double x) const {

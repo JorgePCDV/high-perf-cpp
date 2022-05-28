@@ -16,7 +16,7 @@ public:
     virtual ~Option();
 };
 
-class VanillaOption {
+class VanillaOptionV2 {
 public:
     PayOff* pay_off;
 
@@ -25,8 +25,8 @@ public:
     double T;
     double sigma;
 
-    VanillaOption();
-    VanillaOption(double _K, double _r, double _T,
+    VanillaOptionV2();
+    VanillaOptionV2(double _K, double _r, double _T,
         double _sigma, PayOff* _pay_off);
 };
 

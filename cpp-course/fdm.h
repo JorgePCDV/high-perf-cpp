@@ -58,4 +58,6 @@ public:
     void step_march();
 };
 
+void FDMSolverExample();
+
 #endif 

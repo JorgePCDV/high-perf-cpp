@@ -9,9 +9,9 @@ Option::Option(double _K, double _r,
 
 Option::~Option() {}
 
-VanillaOption::VanillaOption() {}
+VanillaOptionV2::VanillaOptionV2() {}
 
-VanillaOption::VanillaOption(double _K, double _r, double _T,
+VanillaOptionV2::VanillaOptionV2(double _K, double _r, double _T,
 	double _sigma, PayOff* _pay_off) :
 	K(_K), r(_r), T(_T), sigma(_sigma), pay_off(_pay_off) {}
 
